@@ -162,7 +162,6 @@ main>section {
 /* company card style start  */
 .card-container {
     display: grid;
-    /* gap: 12.43rem; */
     grid-template-columns: repeat(7, 1fr);
     padding: 1.93rem 3.87rem;
     border-top: 1px solid lightgray;
@@ -171,6 +170,7 @@ main>section {
 
 .card-container img {
     width: 3.43rem;
+
 }
 
 .card-container {
@@ -300,6 +300,12 @@ main>section {
     }
     .small-device h4{
         display: block !important;
+    }
+
+    .company-card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
