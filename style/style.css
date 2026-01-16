@@ -17,22 +17,27 @@
     display: flex;
 }
 
+main>section {
+    margin: 6.25rem 0;
+}
+
 .navbar,
 .banner-section {
     max-width: 75rem;
     margin: 0 auto;
 }
 
-.company-card {
+.company-card,
+.feature-section {
     max-width: 69.37rem;
     margin: 0 auto;
 }
 
-#popular-section{
+#popular-section {
     max-width: 65.43rem;
     margin: 0 auto;
     margin-bottom: 6.25rem;
-    
+
 }
 
 /* header section style  */
@@ -40,7 +45,7 @@
     display: none !important;
 }
 
-.my-icon{
+.my-icon {
     display: none !important;
 }
 
@@ -113,12 +118,37 @@
 
 }
 
+.join-btn {
+    border-radius: 0rem;
+    background-color: rgba(224, 44, 109, 1);
+    padding: .625rem 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.see-more {
+    background-color: white;
+    color: #E02C6D;
+    margin-top: 1.75rem;
+
+}
+
+.see-m-btn {
+    display: flex;
+    justify-content: right;
+    max-width: 1047;
+    max-width: 65.43rem;
+    margin: 0 auto;
+}
+
 /* banner image style  */
 .banner-image {
     background-image: url(../images/Circle\ design.svg);
     width: 100%;
     background-repeat: no-repeat;
-    
+
 }
 
 .banner-image img {
@@ -135,17 +165,17 @@
     border-bottom: 1px solid lightgray;
 }
 
-.card-container img{
+.card-container img {
     width: 3.43rem;
 }
 
-.card-container{
+.card-container {
     margin-bottom: 6.25rem;
 }
 
 
 /* popular-section style  */
-.popular-heading{
+.popular-heading {
     text-align: center;
     font-size: 1.75rem;
     font-weight: 600;
@@ -153,42 +183,66 @@
     margin-bottom: 1.87rem;
 }
 
-.popular-card{
+.popular-card {
     width: 20.56rem;
     padding: 1rem;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
     border-radius: .31rem;
 }
 
-.popular-card-image{
+.popular-card-image {
     margin-bottom: 1rem;
 }
 
-.popular-card-title{
+.popular-card-title {
     font-size: 1.75rem;
     font-weight: 500;
     color: #18191F;
     margin-bottom: .37rem;
 }
-.price-tag{
+
+.price-tag {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: ;
 }
-.para{
+
+.para {
     font-weight: 700;
     color: #787885;
-    
+
 }
 
 /* popular-card section   */
 
-.popular-card-container{
+.popular-card-container {
     display: grid;
     gap: 1.87rem;
     grid-template-columns: repeat(3, 1fr);
 
 }
+
+/* feature-section  */
+.feature-section {
+    margin-bottom: 6.25rem;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
+.feature-title {
+    font-size: 2.37rem;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 1rem;
+}
+
+.feature-para {
+    color: #6C6C6C;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
 
 
 /* responsive for small device  */
@@ -197,7 +251,7 @@
         flex-direction: column-reverse;
     }
 
-    .banner-content{
+    .banner-content {
         margin-left: 1rem;
     }
 
@@ -212,33 +266,97 @@
     .ham-burger {
         display: block !important;
     }
+
     .my-icon {
         display: block !important;
         margin-right: 1.75rem;
     }
 
-    .popular-card-container{
+    .popular-card-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
 
+    .feature-section {
+        max-width: 20rem;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+
+
+    }
+    .feature-content{
+        text-align: center;
+    }
+
+    .feature-image img{
+        width: 100%;
+        
+    }
+
+
+
 }
+
+footer{
+    background-color: #0b0827;
+    color: white;
+    padding: 3.125rem 0;
+    text-align: center;
+    margin-bottom: .18rem;
+}
+
+.footer{
+    max-width: 16.37rem;
+    margin: 0 auto;
+}
+
+.footer h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.footer p{
+    font-size: .87rem;
+    color: #D9DBE1;
+    margin-bottom: .18rem;
+}
+.footer i{
+    height: 2rem;
+    width: 2rem;
+    background-color: #AAAAAA;
+    padding: .5rem;
+    border-radius: 50%;
+    
+    
+}
+
+
 
 
 
 /* responsive for tablet device  */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-   
 
-    .small-device h4{
+
+    .small-device h4 {
         display: none !important;
     }
 
-    .popular-card-container{
+    .popular-card-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
 
-    
+    .feature-section {
+        flex-direction: column-reverse;
+        justify-items: center;
+    }
+
+    .feature-content {
+        margin-left: 2rem;
+    }
+
+
 }
