@@ -74,6 +74,10 @@ main>section {
     color: rgba(58, 58, 58, 1);
 }
 
+.small-device h4{
+    display: none !important;
+}
+
 /* banner section css start  */
 
 .banner-section {
@@ -293,6 +297,9 @@ main>section {
     .feature-image img{
         width: 100%;
         
+    }
+    .small-device h4{
+        display: block !important;
     }
 
 
