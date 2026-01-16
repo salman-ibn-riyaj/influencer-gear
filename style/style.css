@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.navbar,
+.banner-section {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.company-card {
+    max-width: 69.37rem;
+    margin: 0 auto;
+}
+
+/* header section style  */
+.ham-burger {
+    display: none !important;
+}
+
+.my-icon{
+    display: none !important;
+}
+
+/* navbar style start  */
+.navbar {
+    margin-top: 5.43rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(58, 58, 58, 1);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2.12rem;
+    list-style-type: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* banner section css start  */
+
+.banner-section {
+    justify-content: space-between;
+    gap: 8.31rem;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.banner-content {
+    max-width: 36.25rem;
+
+
+}
+
+.banner-content * {
+    margin-bottom: 1rem;
+}
+
+.banner-content h2 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: rgba(58, 58, 58, 1);
+}
+
+.banner-content p {
+    color: rgba(58, 58, 58, 1);
+}
+
+.banner-btn {
+    background-color: rgba(224, 44, 109, 1);
+    padding: .625rem 1.5rem;
+    border-radius: 2.56rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-weight: 700;
+
+}
+
+/* banner image style  */
+.banner-image {
+    background-image: url(../images/Circle\ design.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.banner-image img {
+    width: 27.5rem;
+}
+
+/* company card style start  */
+.card-container {
+    display: grid;
+    /* gap: 12.43rem; */
+    grid-template-columns: repeat(7, 1fr);
+    padding: 1.93rem 3.87rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.card-container img{
+    width: 3.43rem;
+}
+
+.card-container{
+    margin-bottom: 6.25rem;
+}
+
+
+/* responsive for small device  */
+@media screen and (max-width: 576px) {
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .navbar h3 {
+        display: none;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .ham-burger {
+        display: block !important;
+    }
+    .my-icon {
+        display: block !important;
+    }
+
+}
+
+/* responsive for tablet device  */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .my-icon {
+        display: block !important;
+    }
+
+    .small-device h4{
+        display: none !important;
+    }
+
+    
+}
